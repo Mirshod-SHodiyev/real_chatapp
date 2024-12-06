@@ -3,6 +3,7 @@
 namespace App\Events;
 
 use App\Models\Message;
+use App\Models\Room;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
@@ -17,12 +18,11 @@ class GotNewChat implements ShouldBroadcast
     {
     }
 
-    public function broadcastOn(): PrivateChannel
+    public function broadcastOn(): array
     {
         return [
-            new PrivateChannel("user.{$this->room->user()->first()->id}"),
-            new PrivateChannel("user.{$this->room->user()->latest()->first()->id}")
-            
+            new PrivateChannel("user.{$this->room->users()->first()->id}"),
+            new PrivateChannel("user.{$this->room->users()->latest()->first()->id}"),
         ];
     }
 }

@@ -604,6 +604,7 @@ class ComposerStaticInita010d323e139eae35547a937362f8711
         'App\\Actions\\HandleNewChat' => __DIR__ . '/../..' . '/app/Actions/HandleNewChat.php',
         'App\\Actions\\StoreMessage' => __DIR__ . '/../..' . '/app/Actions/StoreMessage.php',
         'App\\Events\\GotMessage' => __DIR__ . '/../..' . '/app/Events/GotMessage.php',
+        'App\\Events\\GotNewChat' => __DIR__ . '/../..' . '/app/Events/GotNewChat.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',

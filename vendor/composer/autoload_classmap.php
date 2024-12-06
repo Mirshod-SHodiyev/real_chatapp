@@ -13,6 +13,7 @@ return array(
     'App\\Actions\\HandleNewChat' => $baseDir . '/app/Actions/HandleNewChat.php',
     'App\\Actions\\StoreMessage' => $baseDir . '/app/Actions/StoreMessage.php',
     'App\\Events\\GotMessage' => $baseDir . '/app/Events/GotMessage.php',
+    'App\\Events\\GotNewChat' => $baseDir . '/app/Events/GotNewChat.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
